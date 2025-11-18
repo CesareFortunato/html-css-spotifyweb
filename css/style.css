@@ -11,6 +11,8 @@
     display: flex;
 }
 
+/* MAIN */
+
 .main-section{
     overflow: auto;
     width: 100%;
@@ -27,9 +29,25 @@
 
 }
 
+/* MENU */
+
 .main-menu-container{
-    width: 150px;
+    width: 300px;
+    display: block;
+    background-color: aqua;
 }
+
+.img-container{
+    width: 80%;    
+}
+
+.logo{
+    padding: 15px;
+}
+
+
+
+/* FOOTER */
 
 footer{
     height: 100px;
