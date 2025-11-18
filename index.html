@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <title>Spotify</title>
@@ -15,23 +18,24 @@
         <div class="main-container">
             <div class="main-menu-container">
                 <div class="img-container">
-                <img class="logo" src="./imgs/logo.svg" alt="">
+                    <img class="logo" src="./imgs/logo.svg" alt="">
                 </div>
                 <div class="menu">
-                    <ul>
-                        <li><i class="home-icon"></i>Home</li>
-                        <li><i class="search-icon"></i>Cerca</li>
-                        <li><i class="library-icon"></i>La tua libreria</li>
+                    <ul class="playlist-list">
+                        <li><a href=""><i class="home-icon"></i>Home</a></li>
+                        <li><a href=""><i class="search-icon"></i>Cerca</a></li>
+                        <li><a href=""><i class="library-icon"></i>La tua libreria</a></li>
                     </ul>
                 </div>
-                <h5>Playlist</h5>
-                <h6>Crea Playlist</h6>
-                <ul>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
+
+                <h3><b>PLAYLIST</b></h3>
+                <ul class="playlist-list">
+                    <li class="create-playlist"><a href=""><i class="fa-solid fa-plus add-icon" style="color: #000000;"></i>Crea playlist</a></li>
+                    <li><a href="">Nome Playlist</a></li>
+                    <li><a href="">Nome Playlist</a></li>
+                    <li><a href="">Nome Playlist</a></li>
+                    <li><a href="">Nome Playlist</a></li>
+                    <li><a href="">Nome Playlist</a></li>
                 </ul>
                 <div class="main-menu-bottom">
                     <a href="">Installa app</a>
@@ -45,7 +49,7 @@
                 <div class="cta-top">
                     <button>cta-top</button>
                 </div>
-                
+
             </div>
         </div>
     </main>

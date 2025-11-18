@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,65 +6,86 @@
 
 /* GENERAL RULES */
 
-.main-container{
+.main-container {
     height: calc(100vh - 100px);
     display: flex;
 }
 
-li{
+li {
+    margin-top: 10px;
+}
+
+a {
     color: gray;
 }
 
+h3 {
+    color: white;
+    margin-top: 25px;
+    padding-left: 20px;
+}
+
+h4 {
+    color: white;
+    margin-top: 10px;
+}
 
 /* TODO ICON ALIGN WITH TEXT */
-.home-icon{
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  background-image: url('/imgs/home.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 5px;
-}
-
-.search-icon{
+.home-icon {
     display: inline-block;
-  width: 25px;
-  height: 25px;
-  background-image: url('/imgs/search.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    background-image: url('/imgs/home.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 5px;
 }
 
-.library-icon{
+.search-icon {
     display: inline-block;
-  width: 25px;
-  height: 25px;
-  background-image: url('/imgs/libreria.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    background-image: url('/imgs/search.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 5px;
 }
 
+.library-icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url('/imgs/libreria.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 5px;
+}
+
+/* todo align icon */
+.add-icon {
+    background-color: gray;
+    padding: 5px 10px;
+    padding-right: 23px;
+    margin-right: 10px;
+}
 
 
 /* MAIN */
 
-.main-section{
+.main-section {
     overflow: auto;
     width: 100%;
-    
+
 }
 
-.cta-top{
+.cta-top {
     background-color: rgba(0, 0, 0, 0.5);
     height: 100px;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     position: sticky;
     top: 0;
 
@@ -72,25 +93,36 @@ li{
 
 /* MENU */
 
-.main-menu-container{
+.main-menu-container {
     width: 300px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: black;
 }
 
-.img-container{
-    width: 80%;    
+.img-container {
+    width: 80%;
 }
 
-.logo{
+.logo {
     padding: 15px;
+}
+
+.playlist-list {
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.main-menu-bottom {
+    margin-top: auto;
 }
 
 
 
 /* FOOTER */
 
-footer{
+footer {
     height: 100px;
     background-color: orange;
 }
