@@ -14,6 +14,17 @@
 .main-section{
     overflow: auto;
     width: 100%;
+    
+}
+
+.cta-top{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    display: flex;
+    justify-content: flex-end; 
+    position: sticky;
+    top: 0;
+
 }
 
 .main-menu-container{
