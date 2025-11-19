@@ -1,0 +1,7 @@
+/* 878px */
+
+@media screen and (max-width 878px) {
+    .nav-list{
+        justify-content: space-between;
+    }
+}
