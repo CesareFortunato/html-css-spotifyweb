@@ -17,6 +17,7 @@ body{
 
 li {
     margin-top: 15px;
+    font-weight: 600;
 }
 
 a {
@@ -108,7 +109,7 @@ h4 {
 .main-section {
     overflow: auto;
     width: 100%;
-    background-color: lightcoral;
+    background-color: #141922;
 
 }
 
@@ -143,13 +144,40 @@ h4 {
     gap: 30px;
 }
 
+a:hover{
+    color: white
+}
+
+.pressed-li{
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.pressed-li::after{
+    content: "";
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  width: 40px; 
+  border-bottom: 2px solid greenyellow; 
+}
+
+.nav-list > a:checked{
+    color: red;
+}
+
 .central-section{
     width: 90%;
     margin: 20px auto;
 }
 
 .central-section > h2{
+    color: white;
     margin-top: 20px;
+}
+
+.central-section > span{
+    color: white;
 }
 
 
@@ -176,6 +204,9 @@ figure{
 
 figcaption{
     margin-top: 10px;
+    color: #7d7f84;
+    font-weight: 700;
+    font-size: small;
 }
 
 
