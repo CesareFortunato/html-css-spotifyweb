@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: "Montserrat"
+}
+
 /* GENERAL RULES */
 
 .main-container {
@@ -130,14 +134,19 @@ h4 {
     margin: 20px auto;
 }
 
+.central-section > h2{
+    margin-top: 20px;
+}
 
-.cards{
+
+.card-container{
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 10px;
 }
+
+
 
 .card{
     width: calc(100% / 6 - (50px / 6))
@@ -145,6 +154,14 @@ h4 {
 
 .card img{
     max-width: 100%;
+}
+
+figure{
+    text-align: center;
+}
+
+figcaption{
+    margin-top: 10px;
 }
 
 
