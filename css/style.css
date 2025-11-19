@@ -116,10 +116,24 @@ h4 {
     background-color: rgba(0, 0, 0, 0.5);
     height: 100px;
     display: flex;
+    padding-right: 10px;
     justify-content: flex-end;
+    align-items: center;
     position: sticky;
     top: 0;
 
+}
+
+.cta-top > span{
+    border: 1px solid white;
+    padding: 10px 25px;
+    border-radius: 35px;
+    color: white;
+    font-size: small;
+}
+
+.cta-top > span:hover{
+    font-size: larger;
 }
 
 .nav-list{
