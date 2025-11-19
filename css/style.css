@@ -4,15 +4,19 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Montserrat"
 }
 
 /* GENERAL RULES */
 
 .main-container {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 150px);
     display: flex;
+}
+
+.card-border {
+    border-radius: 100px;
 }
 
 li {
@@ -81,7 +85,7 @@ h4 {
     margin-right: 10px;
 }
 
-.artist-icon{
+.artist-icon {
     display: inline-block;
     width: 25px;
     height: 25px;
@@ -95,7 +99,7 @@ h4 {
     margin-top: 5px;
 }
 
-.artist-bottom{
+.artist-bottom {
     color: white;
 }
 
@@ -129,7 +133,7 @@ h4 {
 
 }
 
-.cta-top > span{
+.cta-top>span {
     border: 1px solid white;
     padding: 10px 25px;
     border-radius: 35px;
@@ -137,11 +141,11 @@ h4 {
     font-size: small;
 }
 
-.cta-top > span:hover{
+.cta-top>span:hover {
     font-size: larger;
 }
 
-.nav-list{
+.nav-list {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -149,44 +153,40 @@ h4 {
     flex-wrap: wrap;
 }
 
-a:hover{
+a:hover {
     color: white
 }
 
-.pressed-li{
+.pressed-li {
     position: relative;
     padding-bottom: 5px;
 }
 
-.pressed-li::after{
+.pressed-li::after {
     content: "";
-  position: absolute;
-  bottom: 0;
-  left: 40px;
-  width: 40px; 
-  border-bottom: 2px solid greenyellow; 
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    width: 40px;
+    border-bottom: 2px solid greenyellow;
 }
 
-.nav-list > a:checked{
-    color: red;
-}
-
-.central-section{
+.central-section {
     width: 90%;
     margin: 20px auto;
 }
 
-.central-section > h2{
+.central-section>h2 {
     color: white;
     margin-top: 20px;
 }
 
-.central-section > span{
+.central-section>span {
     color: white;
 }
 
 
-.card-container{
+.card-container {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -195,19 +195,19 @@ a:hover{
 
 
 
-.card{
+.card {
     width: calc(100% / 6 - (50px / 6))
 }
 
-.card img{
+.card img {
     max-width: 100%;
 }
 
-figure{
+figure {
     text-align: center;
 }
 
-figcaption{
+figcaption {
     margin-top: 10px;
     color: #7d7f84;
     font-weight: 700;
@@ -235,7 +235,7 @@ figcaption{
     padding: 15px;
 }
 
-.logo-small{
+.logo-small {
     display: none;
     padding: 15px;
 }
@@ -256,18 +256,52 @@ figcaption{
 }
 
 
-
-
-
-
-
-
 /* FOOTER */
 
 footer {
+    height: 150px;    
+    background-color: #282828;
+}
+
+.footer-container{
     height: 100px;
-    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+}
+
+.current-song-container{
+    width: calc(100% / 5);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.current-song{
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.current-song > img{
+    height: 60%;         
+    width: auto;          
+    max-width: 60%;   
+    padding-left: 20px;
+    margin-top: 40px;
+    object-fit: contain;  
+    display: block;
 }
 
 
+.current-song > figcaption{
+    margin-top: 30px;
+}
 
+.like-folder{
+    color:#7d7f84;
+    margin-top: 40px;    
+}
