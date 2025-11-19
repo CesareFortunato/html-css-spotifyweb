@@ -15,3 +15,46 @@
          width: calc(100% / 2 - (50px / 2))
     }
 }
+
+/* 552 */
+
+@media screen and (max-width: 552px) {
+    .logo{
+        display: none;
+    }
+
+    .logo-small{
+        display: block; 
+        max-width: 100%;       
+    }
+
+    .playlist-list  span{
+        display: none;
+    }
+
+    .create-playlist{
+        display: none;
+    }
+
+    .main-container h3{
+        display: none;
+    }
+
+    .cta-bottom{
+        display: none;
+    }
+
+    .artist-bottom b{
+        display: none;
+    }
+
+    .main-menu-container{
+        width: 60px;
+        
+    }
+
+    .main-menu-bottom > hr{
+        display: none;
+        align-items: center;
+    }
+}
