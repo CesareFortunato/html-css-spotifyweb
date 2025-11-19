@@ -1,13 +1,17 @@
 /* 878px */
 
 @media screen and (max-width: 878px) {
-    .nav-list{
-       
-    }
-
- 
-
+   
     .card{
          width: calc(100% / 4 - (50px / 4))
+    }
+}
+
+
+/* 639px */
+
+@media screen and (max-width: 639px) {
+    .card{
+         width: calc(100% / 2 - (50px / 2))
     }
 }
