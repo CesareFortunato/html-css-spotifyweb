@@ -309,11 +309,11 @@ footer {
     justify-content: space-between;
 }
 
-.fa-heart:hover{
+.fa-heart:hover {
     color: white;
 }
 
-.fa-folder:hover{
+.fa-folder:hover {
     color: white;
 }
 
@@ -327,12 +327,21 @@ footer {
     align-items: center;
 }
 
-.controls{
+.controls {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
     padding-top: 15px;
 }
 
 .play-icon {
-    border: 1px solid 50px;
+    transition: transform 0.2s, filter 0.2s;
+    display: inline-block;
+
+}
+
+.play-icon:hover {
+    transform: scale(2);
 }
 
 .audio-progress-bar {
@@ -396,7 +405,7 @@ footer {
     font-size: 1rem;
 }
 
-.volume-container{
+.volume-container {
     display: flex;
     align-items: center;
     margin-top: 20px;
@@ -405,12 +414,11 @@ footer {
     gap: 20px;
 }
 
-.volume-container .slider-container{
+.volume-container .slider-container {
     flex: 0.5;
     margin-right: 15px;
 }
 
-.volume-container > a{
+.volume-container>a {
     color: white;
 }
-
