@@ -259,17 +259,17 @@ figcaption {
 /* FOOTER */
 
 footer {
-    height: 150px;    
+    height: 150px;
     background-color: #282828;
 }
 
-.footer-container{
+.footer-container {
     height: 100px;
     display: flex;
     justify-content: space-between;
 }
 
-.current-song-container{
+.current-song-container {
     width: calc(100% / 5);
     height: 100%;
     display: flex;
@@ -277,31 +277,111 @@ footer {
     justify-content: space-between;
 }
 
-.current-song{
+.current-song {
     max-width: 100%;
     max-height: 100%;
-    height: 100%; 
+    height: 100%;
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.current-song > img{
-    height: 60%;         
-    width: auto;          
-    max-width: 60%;   
+.current-song>img {
+    height: 60%;
+    width: auto;
+    max-width: 60%;
     padding-left: 20px;
     margin-top: 40px;
-    object-fit: contain;  
+    object-fit: contain;
     display: block;
 }
 
 
-.current-song > figcaption{
+.current-song>figcaption {
     margin-top: 30px;
 }
 
-.like-folder{
-    color:#7d7f84;
-    margin-top: 40px;    
+.like-folder {
+    color: #7d7f84;
+    margin-top: 40px;
+}
+
+.controls-container {
+    width: calc(100% / 3);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.play-icon {
+    border: 1px solid 50px;
+}
+
+.audio-progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto;
+    gap: 10px;
+    width: 100%;
+}
+
+
+.time {
+    color: #fff;
+    font-size: 0.85rem;
+    font-family: sans-serif;
+    min-width: 35px;
+    text-align: center;
+}
+
+.slider-container {
+    position: relative;
+    flex: 1;
+    height: 4px;
+    background: #555;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.gray-slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    background-color: #7d7f84;
+    border-radius: 2px;
+}
+
+.hover-slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    height: 100%;
+    background-color: greenyellow;
+    border-radius: 2px;
+    display: none;
+}
+
+.slider-container:hover .hover-slider {
+    display: block;
+}
+
+.circle-icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.volume-container {
+    width: calc(100% / 5);
 }
