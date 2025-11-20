@@ -304,6 +304,17 @@ footer {
 .like-folder {
     color: #7d7f84;
     margin-top: 40px;
+    width: calc(100% / 6);
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-heart:hover{
+    color: white;
+}
+
+.fa-folder:hover{
+    color: white;
 }
 
 .controls-container {
@@ -379,9 +390,23 @@ footer {
     top: 50%;
     transform: translateY(-50%);
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 0.5rem;
 }
 
-.volume-container {
+.volume-container{
+    display: flex;
+    align-items: center;
     width: calc(100% / 5);
+    justify-content: flex-end;
+    gap: 20px;
 }
+
+.volume-container .slider-container{
+    flex: 0.5;
+    margin-right: 15px;
+}
+
+.volume-container > a{
+    color: white;
+}
+
