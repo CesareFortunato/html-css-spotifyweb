@@ -396,6 +396,7 @@ footer {
 .volume-container{
     display: flex;
     align-items: center;
+    margin-top: 20px;
     width: calc(100% / 5);
     justify-content: flex-end;
     gap: 20px;

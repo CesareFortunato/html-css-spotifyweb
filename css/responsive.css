@@ -5,6 +5,31 @@
     .card{
          width: calc(100% / 4 - (50px / 4))
     }
+
+    .current-song-container{
+        width: calc(100% / 3);
+        justify-content: flex-start;  
+        gap: 30px;      
+    }
+
+    .controls-container{
+        width: calc(100% / 3);
+    }
+
+    .volume-container{
+        width: calc(100% / 3);
+        justify-content: center;
+    }
+
+    .current-song{
+        justify-content: flex-start;
+        gap: 5px;
+        text-align: left;
+    }
+
+    .like-folder{
+        gap: 10px;
+    }
 }
 
 
@@ -13,6 +38,19 @@
 @media screen and (max-width: 639px) {
     .card{
          width: calc(100% / 2 - (50px / 2))
+    }
+
+    .current-song-container{
+        justify-content: flex-start;
+        gap: 7px;
+    }
+
+    .like-folder{
+        display: block;
+    }
+
+    .volume-container{
+        gap: 10px;
     }
 }
 
