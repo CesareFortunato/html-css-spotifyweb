@@ -6,6 +6,8 @@
          width: calc(100% / 4 - (50px / 4))
     }
 
+   
+
     .current-song-container{
         width: calc(100% / 3);
         justify-content: flex-start;  
@@ -52,6 +54,10 @@
     .volume-container{
         gap: 10px;
     }
+
+    .volume-container > .slider-container{
+        flex: 0.8;
+    }
 }
 
 /* 552 */
@@ -64,6 +70,13 @@
     .logo-small{
         display: block; 
         max-width: 100%;       
+    }
+    .img-container{
+        width: 100%;
+    }
+
+    .menu > .playlist-list{
+        padding-left: 15px;
     }
 
     .playlist-list  span{
@@ -88,11 +101,16 @@
 
     .main-menu-container{
         width: 60px;
-        
+    }
+
+    .main-menu-bottom{
+        align-items: center;
     }
 
     .main-menu-bottom > hr{
         display: none;
         align-items: center;
     }
+
+
 }
