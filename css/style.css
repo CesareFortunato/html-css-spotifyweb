@@ -11,7 +11,7 @@ body {
 /* GENERAL RULES */
 
 .main-container {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 100px);
     display: flex;
 }
 
@@ -116,7 +116,8 @@ h4 {
 
 .main-section {
     overflow: auto;
-    width: 100%;
+    /* width: 100%; */
+    flex-grow: 1;
     background-color: #141922;
 
 }
@@ -225,6 +226,7 @@ figcaption {
     display: flex;
     flex-direction: column;
     background-color: black;
+    overflow: auto;
 }
 
 .img-container {
@@ -259,7 +261,7 @@ figcaption {
 /* FOOTER */
 
 footer {
-    height: 150px;
+    height: 100px;
     background-color: #282828;
 }
 
