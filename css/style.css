@@ -227,6 +227,14 @@ figcaption {
     flex-direction: column;
     background-color: black;
     overflow: auto;
+    justify-content: space-between;
+}
+
+.top-menu-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .img-container {
@@ -245,11 +253,15 @@ figcaption {
 .playlist-list {
     list-style: none;
     margin-top: 10px;
-    padding-left: 20px;
+    padding-left: 20px;   
+}
+
+.playlist-list a{
+    display: flex;
+    align-items: center;    
 }
 
 .main-menu-bottom {
-    margin-top: auto;
     padding: 10px;
     height: 10%;
     display: flex;
