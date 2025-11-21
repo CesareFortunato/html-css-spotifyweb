@@ -1,35 +1,35 @@
 /* 878px */
 
 @media screen and (max-width: 878px) {
-   
-    .card{
-         width: calc(100% / 4 - (50px / 4))
+
+    .card {
+        width: calc(100% / 4 - (50px / 4))
     }
 
-   
 
-    .current-song-container{
+
+    .current-song-container {
         width: calc(100% / 3);
-        justify-content: flex-start;  
-        gap: 30px;      
+        justify-content: flex-start;
+        gap: 30px;
     }
 
-    .controls-container{
+    .controls-container {
         width: calc(100% / 3);
     }
 
-    .volume-container{
+    .volume-container {
         width: calc(100% / 3);
         justify-content: center;
     }
 
-    .current-song{
+    .current-song {
         justify-content: flex-start;
         gap: 5px;
         text-align: left;
     }
 
-    .like-folder{
+    .like-folder {
         gap: 10px;
     }
 }
@@ -38,24 +38,24 @@
 /* 639px */
 
 @media screen and (max-width: 639px) {
-    .card{
-         width: calc(100% / 2 - (50px / 2))
+    .card {
+        width: calc(100% / 2 - (50px / 2))
     }
 
-    .current-song-container{
+    .current-song-container {
         justify-content: flex-start;
         gap: 7px;
     }
 
-    .like-folder{
+    .like-folder {
         display: block;
     }
 
-    .volume-container{
+    .volume-container {
         gap: 10px;
     }
 
-    .volume-container > .slider-container{
+    .volume-container>.slider-container {
         flex: 0.8;
     }
 }
@@ -63,53 +63,58 @@
 /* 552 */
 
 @media screen and (max-width: 552px) {
-    .logo{
+    .logo {
         display: none;
     }
 
-    .logo-small{
-        display: block; 
-        max-width: 100%;       
+    .logo-small {
+        display: block;
+        max-width: 100%;
     }
-    .img-container{
+
+    .img-container {
         width: 100%;
     }
 
-    .menu > .playlist-list{
+    .menu>.playlist-list {
         padding-left: 15px;
     }
 
-    .playlist-list  span{
+    .playlist-list span {
         display: none;
     }
 
-    .create-playlist{
+    .create-playlist {
         display: none;
     }
 
-    .main-container h3{
+    .main-container h3 {
         display: none;
     }
 
-    .cta-bottom{
+    .cta-bottom {
         display: none;
     }
 
-    .artist-bottom b{
+    .artist-bottom b {
         display: none;
     }
 
-    .main-menu-container{
+    .main-menu-container {
         width: 60px;
     }
 
-    .main-menu-bottom{
+    .main-menu-bottom {
         align-items: center;
     }
 
-    .main-menu-bottom > hr{
+    .main-menu-bottom>hr {
         display: none;
         align-items: center;
+    }
+
+    .controls{
+        width: 65%;
     }
 
 
