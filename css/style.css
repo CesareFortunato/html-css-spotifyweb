@@ -200,12 +200,19 @@ a:hover {
     width: calc(100% / 6 - (50px / 6))
 }
 
+
+
 .card img {
     max-width: 100%;
 }
 
 figure {
     text-align: center;
+}
+
+figure img {
+    display: block;
+    max-width: 100%;
 }
 
 figcaption {
@@ -215,6 +222,46 @@ figcaption {
     font-size: small;
 }
 
+.imgbox {
+  position: relative;
+  display: inline-block; 
+}
+
+.imgbox img {
+  display: block;
+  max-width: 100%;
+}
+
+.imgbox:hover .overlay,
+figure:hover .imgbox .overlay {
+  opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+    z-index: 2;
+    pointer-events: none
+}
+
+figure:hover .overlay {
+    opacity: 1;
+}
+
+.overlay i {
+    color: #fff;
+    font-size: 2.5rem;
+}
 
 
 
@@ -230,7 +277,7 @@ figcaption {
     justify-content: space-between;
 }
 
-.top-menu-container{
+.top-menu-container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -253,12 +300,12 @@ figcaption {
 .playlist-list {
     list-style: none;
     margin-top: 10px;
-    padding-left: 20px;   
+    padding-left: 20px;
 }
 
-.playlist-list a{
+.playlist-list a {
     display: flex;
-    align-items: center;    
+    align-items: center;
 }
 
 .main-menu-bottom {
@@ -285,10 +332,11 @@ footer {
 
 .current-song-container {
     width: calc(100% / 5);
-    height: 100%;
+    /*  height: 100%; */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 
 .current-song {
